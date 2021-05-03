@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+h1{
+	color:red;
+	text-align:center;
+}
+table{
+	margin-right:auto;
+	margin-left:auto;
+	font-size:16pt;
+}
+th{
+	text-align:right;
+}

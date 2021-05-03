@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" href="/css/indexStyle.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body style="background-color:white;">
+	<h1>Customer Reviews</h1>
+	<table>
+		<tr>
+			<th>Restaurant Name</th>
+			<th>Review</th>
+			<th>Date</th>
+			<th>Time</th>
+			<th colspan = "2" align="center">Actions</th>
+		</tr>
+		<tr th:each="r, iterStat : ${list}" th:class="${iterStat.odd}? 'colorGrey': 'colorYellow'">
+			<td th:text="${r.name}"></td>
+			<td th:text="${r.review}"></td>
+			<td th:text="${r.reviewDate}"></td>
+			<td th:text="${r.reviewTime}"></td>
+			<td><a th:href="@{/edit/{name}(name=${r.name})}">Edit</a></td>
+			<td><a th:href="@{/delete/{name}(name=${r.name})}">Delete</a></td>
+		</tr>
+	</table>
+	<p>Want to add another review. <a th:href="@{/form}">Click Here</a></p>
+</body>
+</html>

@@ -1,0 +1,3 @@
+INSERT into Reviews(name, review, reviewDate, reviewTime) VALUES ('Pizza Pizza', 'Pizza is good', '2020-10-27','06:56');
+INSERT into Reviews(name, review, reviewDate, reviewTime) VALUES ('McDonalds', 'You guys are awesome but have something for the vegetarians also', '2020-10-24','02:39');
+INSERT into Reviews(name, review, reviewDate, reviewTime) VALUES ('Tim Hortons', 'Cheap and Good', '2020-09-22','04:12');
